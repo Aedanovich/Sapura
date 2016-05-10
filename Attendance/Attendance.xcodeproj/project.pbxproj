@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0522F65D597AF3471A0CDFBB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1818C817A3DDF5E9183C9B18 /* libPods.a */; };
+		FA01C0AE1C12EA9C00D931A6 /* FingerPrintScannerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA01C0AD1C12EA9C00D931A6 /* FingerPrintScannerDelegate.m */; };
+		FA229EA51C290CB800143E67 /* Host+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA229EA31C290CB800143E67 /* Host+CoreDataProperties.swift */; };
+		FA229EA61C290CB800143E67 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA229EA41C290CB800143E67 /* Host.swift */; };
+		FA26DD331C054F260023F141 /* SettingsOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26DD321C054F260023F141 /* SettingsOptionsViewController.swift */; };
+		FA3F4B201C02F7C200FC1C25 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F4B1F1C02F7C200FC1C25 /* BaseView.swift */; };
+		FA3F4B251C02FB1500FC1C25 /* ThermometerDataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F4B241C02FB1500FC1C25 /* ThermometerDataDecoder.swift */; };
+		FA456C8F1C0E82B4005CE236 /* BluetoothDeviceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA456C8E1C0E82B4005CE236 /* BluetoothDeviceInterface.swift */; };
+		FA68E6261C04109E00EC93E7 /* NSDate+IRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68E6251C04109E00EC93E7 /* NSDate+IRegistration.swift */; };
+		FA731AE71C003987006FC181 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA731AE61C003987006FC181 /* BaseViewController.swift */; };
+		FA731AF21C01FEFA006FC181 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA731AF11C01FEFA006FC181 /* CoreDataManager.swift */; };
+		FA731AF61C02200F006FC181 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA731AF51C02200F006FC181 /* DetailView.swift */; };
+		FA748D8B1C07EB54000B0139 /* arrow-dropdown.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D5B1C07EB54000B0139 /* arrow-dropdown.png */; };
+		FA748D8C1C07EB54000B0139 /* bg-signin.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D5C1C07EB54000B0139 /* bg-signin.png */; };
+		FA748D8D1C07EB54000B0139 /* button-done.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D5D1C07EB54000B0139 /* button-done.png */; };
+		FA748D8E1C07EB54000B0139 /* button-fingerprint.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D5E1C07EB54000B0139 /* button-fingerprint.png */; };
+		FA748D8F1C07EB54000B0139 /* button-idcard.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D5F1C07EB54000B0139 /* button-idcard.png */; };
+		FA748D901C07EB54000B0139 /* button-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D601C07EB54000B0139 /* button-photo.png */; };
+		FA748D911C07EB54000B0139 /* button-thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D611C07EB54000B0139 /* button-thermometer.png */; };
+		FA748D921C07EB54000B0139 /* circle-status.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D621C07EB54000B0139 /* circle-status.png */; };
+		FA748D931C07EB54000B0139 /* icon-add.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D631C07EB54000B0139 /* icon-add.png */; };
+		FA748D941C07EB54000B0139 /* icon-bigadd.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D641C07EB54000B0139 /* icon-bigadd.png */; };
+		FA748D951C07EB54000B0139 /* icon-logout.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D651C07EB54000B0139 /* icon-logout.png */; };
+		FA748D961C07EB54000B0139 /* icon-print.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D661C07EB54000B0139 /* icon-print.png */; };
+		FA748D971C07EB54000B0139 /* icon-search.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D671C07EB54000B0139 /* icon-search.png */; };
+		FA748D981C07EB54000B0139 /* icon-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D681C07EB54000B0139 /* icon-settings.png */; };
+		FA748D991C07EB54000B0139 /* icon-temp-error.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D691C07EB54000B0139 /* icon-temp-error.png */; };
+		FA748D9A1C07EB54000B0139 /* icon-temp.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D6A1C07EB54000B0139 /* icon-temp.png */; };
+		FA748D9B1C07EB54000B0139 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D6B1C07EB54000B0139 /* logo.png */; };
+		FA748D9C1C07EB54000B0139 /* temp-high.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D6C1C07EB54000B0139 /* temp-high.png */; };
+		FA748D9D1C07EB54000B0139 /* temp-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D6D1C07EB54000B0139 /* temp-normal.png */; };
+		FA748D9E1C07EB54000B0139 /* user-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D6E1C07EB54000B0139 /* user-placeholder.png */; };
+		FA748D9F1C07EB54000B0139 /* arrow-dropdown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D701C07EB54000B0139 /* arrow-dropdown@2x.png */; };
+		FA748DA01C07EB54000B0139 /* bg-signin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D711C07EB54000B0139 /* bg-signin@2x.png */; };
+		FA748DA11C07EB54000B0139 /* button-done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D721C07EB54000B0139 /* button-done@2x.png */; };
+		FA748DA21C07EB54000B0139 /* button-fingerprint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D731C07EB54000B0139 /* button-fingerprint@2x.png */; };
+		FA748DA31C07EB54000B0139 /* button-idcard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D741C07EB54000B0139 /* button-idcard@2x.png */; };
+		FA748DA41C07EB54000B0139 /* button-photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D751C07EB54000B0139 /* button-photo@2x.png */; };
+		FA748DA51C07EB54000B0139 /* button-thermometer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D761C07EB54000B0139 /* button-thermometer@2x.png */; };
+		FA748DA61C07EB54000B0139 /* circle-status@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D771C07EB54000B0139 /* circle-status@2x.png */; };
+		FA748DA71C07EB54000B0139 /* icon-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D781C07EB54000B0139 /* icon-add@2x.png */; };
+		FA748DA81C07EB54000B0139 /* icon-bigadd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D791C07EB54000B0139 /* icon-bigadd@2x.png */; };
+		FA748DA91C07EB54000B0139 /* icon-logout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D7A1C07EB54000B0139 /* icon-logout@2x.png */; };
+		FA748DAA1C07EB54000B0139 /* icon-print@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D7B1C07EB54000B0139 /* icon-print@2x.png */; };
+		FA748DAB1C07EB54000B0139 /* icon-search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D7C1C07EB54000B0139 /* icon-search@2x.png */; };
+		FA748DAC1C07EB54000B0139 /* icon-settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D7D1C07EB54000B0139 /* icon-settings@2x.png */; };
+		FA748DAD1C07EB54000B0139 /* icon-temp-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D7E1C07EB54000B0139 /* icon-temp-error@2x.png */; };
+		FA748DAE1C07EB54000B0139 /* icon-temp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D7F1C07EB54000B0139 /* icon-temp@2x.png */; };
+		FA748DAF1C07EB54000B0139 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D801C07EB54000B0139 /* logo@2x.png */; };
+		FA748DB01C07EB54000B0139 /* temp-high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D811C07EB54000B0139 /* temp-high@2x.png */; };
+		FA748DB11C07EB54000B0139 /* temp-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D821C07EB54000B0139 /* temp-normal@2x.png */; };
+		FA748DB21C07EB54000B0139 /* user-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D831C07EB54000B0139 /* user-placeholder@2x.png */; };
+		FA748DB31C07EB54000B0139 /* Attendance01.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D851C07EB54000B0139 /* Attendance01.png */; };
+		FA748DB41C07EB54000B0139 /* Attendance02.png in Resources */ = {isa = PBXBuildFile; fileRef = FA748D861C07EB54000B0139 /* Attendance02.png */; };
+		FA748DB51C07EB54000B0139 /* iReception-iPad-1a-add.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA748D871C07EB54000B0139 /* iReception-iPad-1a-add.jpg */; };
+		FA748DB61C07EB54000B0139 /* iReception-iPad-1a-main-default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA748D881C07EB54000B0139 /* iReception-iPad-1a-main-default.jpg */; };
+		FA748DB71C07EB54000B0139 /* iReception-iPad-1a-main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA748D891C07EB54000B0139 /* iReception-iPad-1a-main.jpg */; };
+		FA748DB81C07EB54000B0139 /* iReception-iPad-1a-signin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA748D8A1C07EB54000B0139 /* iReception-iPad-1a-signin.jpg */; };
+		FA748DBA1C07F405000B0139 /* FingerPrintScannerDataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA748DB91C07F405000B0139 /* FingerPrintScannerDataDecoder.swift */; };
+		FA91985F1C059470006138DB /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91985D1C059470006138DB /* User+CoreDataProperties.swift */; };
+		FA9198601C059470006138DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91985E1C059470006138DB /* User.swift */; };
+		FA97A1EE1C62026A00F41664 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A1EC1C62026A00F41664 /* ForgetPasswordView.swift */; };
+		FA97A1EF1C62026A00F41664 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A1ED1C62026A00F41664 /* ForgetPasswordViewController.swift */; };
+		FADFD8991C59F31800A8B7D4 /* button-thermometer-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADFD8981C59F31800A8B7D4 /* button-thermometer-error@2x.png */; };
+		FADFD89B1C59F32400A8B7D4 /* button-thermometer-error.png in Resources */ = {isa = PBXBuildFile; fileRef = FADFD89A1C59F32400A8B7D4 /* button-thermometer-error.png */; };
+		FADFD89D1C59F45400A8B7D4 /* button-photo-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADFD89C1C59F45400A8B7D4 /* button-photo-error@2x.png */; };
+		FADFD89F1C59F45C00A8B7D4 /* button-photo-error.png in Resources */ = {isa = PBXBuildFile; fileRef = FADFD89E1C59F45C00A8B7D4 /* button-photo-error.png */; };
+		FAE124D31C12E01400F14F25 /* BluetoothControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE124D21C12E01400F14F25 /* BluetoothControl.m */; };
+		FAE271031BFC226100D88646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE271021BFC226100D88646 /* AppDelegate.swift */; };
+		FAE271061BFC226100D88646 /* iRegistration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE271041BFC226100D88646 /* iRegistration.xcdatamodeld */; };
+		FAE2710A1BFC226100D88646 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE271091BFC226100D88646 /* DetailViewController.swift */; };
+		FAE2710D1BFC226100D88646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE2710B1BFC226100D88646 /* Main.storyboard */; };
+		FAE2710F1BFC226100D88646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE2710E1BFC226100D88646 /* Assets.xcassets */; };
+		FAE271121BFC226100D88646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE271101BFC226100D88646 /* LaunchScreen.storyboard */; };
+		FAE2711D1BFC226100D88646 /* iRegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2711C1BFC226100D88646 /* iRegistrationTests.swift */; };
+		FAE271281BFC226200D88646 /* iRegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE271271BFC226200D88646 /* iRegistrationUITests.swift */; };
+		FAE271361BFC227200D88646 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE271351BFC227200D88646 /* MainTabBarController.swift */; };
+		FAE271381BFC22C300D88646 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE271371BFC22C300D88646 /* LoginViewController.swift */; };
+		FAE2713A1BFC235D00D88646 /* iRegistrationLoginControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE271391BFC235D00D88646 /* iRegistrationLoginControllerTests.swift */; };
+		FAE2713C1BFC236C00D88646 /* iRegistrationMasterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2713B1BFC236C00D88646 /* iRegistrationMasterViewControllerTests.swift */; };
+		FAE2713E1BFC237D00D88646 /* iRegistrationDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2713D1BFC237D00D88646 /* iRegistrationDetailViewControllerTests.swift */; };
+		FAE871191BFDE5B2008B20B0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE871181BFDE5B2008B20B0 /* LoginView.swift */; };
+		FAE8711C1BFDE75A008B20B0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8711B1BFDE75A008B20B0 /* WebService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE271191BFC226100D88646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE270F71BFC226100D88646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE270FE1BFC226100D88646;
+			remoteInfo = iRegistration;
+		};
+		FAE271241BFC226100D88646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE270F71BFC226100D88646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE270FE1BFC226100D88646;
+			remoteInfo = iRegistration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1818C817A3DDF5E9183C9B18 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF50D5EAA420E43137D3A1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B5DE5989A8EC8B68133267AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FA01C0A91C12E7E600D931A6 /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
+		FA01C0AC1C12EA9C00D931A6 /* FingerPrintScannerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerPrintScannerDelegate.h; sourceTree = "<group>"; };
+		FA01C0AD1C12EA9C00D931A6 /* FingerPrintScannerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerPrintScannerDelegate.m; sourceTree = "<group>"; wrapsLines = 0; };
+		FA229EA31C290CB800143E67 /* Host+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Host+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA229EA41C290CB800143E67 /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		FA26DD321C054F260023F141 /* SettingsOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewController.swift; sourceTree = "<group>"; };
+		FA3F4B1F1C02F7C200FC1C25 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		FA3F4B241C02FB1500FC1C25 /* ThermometerDataDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermometerDataDecoder.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FA456C8E1C0E82B4005CE236 /* BluetoothDeviceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDeviceInterface.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FA68E6251C04109E00EC93E7 /* NSDate+IRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+IRegistration.swift"; sourceTree = "<group>"; };
+		FA731AE61C003987006FC181 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FA731AF11C01FEFA006FC181 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FA731AF51C02200F006FC181 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FA748D5B1C07EB54000B0139 /* arrow-dropdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-dropdown.png"; sourceTree = "<group>"; };
+		FA748D5C1C07EB54000B0139 /* bg-signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-signin.png"; sourceTree = "<group>"; };
+		FA748D5D1C07EB54000B0139 /* button-done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-done.png"; sourceTree = "<group>"; };
+		FA748D5E1C07EB54000B0139 /* button-fingerprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-fingerprint.png"; sourceTree = "<group>"; };
+		FA748D5F1C07EB54000B0139 /* button-idcard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-idcard.png"; sourceTree = "<group>"; };
+		FA748D601C07EB54000B0139 /* button-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-photo.png"; sourceTree = "<group>"; };
+		FA748D611C07EB54000B0139 /* button-thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-thermometer.png"; sourceTree = "<group>"; };
+		FA748D621C07EB54000B0139 /* circle-status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-status.png"; sourceTree = "<group>"; };
+		FA748D631C07EB54000B0139 /* icon-add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-add.png"; sourceTree = "<group>"; };
+		FA748D641C07EB54000B0139 /* icon-bigadd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-bigadd.png"; sourceTree = "<group>"; };
+		FA748D651C07EB54000B0139 /* icon-logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-logout.png"; sourceTree = "<group>"; };
+		FA748D661C07EB54000B0139 /* icon-print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-print.png"; sourceTree = "<group>"; };
+		FA748D671C07EB54000B0139 /* icon-search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-search.png"; sourceTree = "<group>"; };
+		FA748D681C07EB54000B0139 /* icon-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-settings.png"; sourceTree = "<group>"; };
+		FA748D691C07EB54000B0139 /* icon-temp-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-temp-error.png"; sourceTree = "<group>"; };
+		FA748D6A1C07EB54000B0139 /* icon-temp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-temp.png"; sourceTree = "<group>"; };
+		FA748D6B1C07EB54000B0139 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		FA748D6C1C07EB54000B0139 /* temp-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temp-high.png"; sourceTree = "<group>"; };
+		FA748D6D1C07EB54000B0139 /* temp-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temp-normal.png"; sourceTree = "<group>"; };
+		FA748D6E1C07EB54000B0139 /* user-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-placeholder.png"; sourceTree = "<group>"; };
+		FA748D701C07EB54000B0139 /* arrow-dropdown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-dropdown@2x.png"; sourceTree = "<group>"; };
+		FA748D711C07EB54000B0139 /* bg-signin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-signin@2x.png"; sourceTree = "<group>"; };
+		FA748D721C07EB54000B0139 /* button-done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-done@2x.png"; sourceTree = "<group>"; };
+		FA748D731C07EB54000B0139 /* button-fingerprint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-fingerprint@2x.png"; sourceTree = "<group>"; };
+		FA748D741C07EB54000B0139 /* button-idcard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-idcard@2x.png"; sourceTree = "<group>"; };
+		FA748D751C07EB54000B0139 /* button-photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-photo@2x.png"; sourceTree = "<group>"; };
+		FA748D761C07EB54000B0139 /* button-thermometer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-thermometer@2x.png"; sourceTree = "<group>"; };
+		FA748D771C07EB54000B0139 /* circle-status@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-status@2x.png"; sourceTree = "<group>"; };
+		FA748D781C07EB54000B0139 /* icon-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-add@2x.png"; sourceTree = "<group>"; };
+		FA748D791C07EB54000B0139 /* icon-bigadd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-bigadd@2x.png"; sourceTree = "<group>"; };
+		FA748D7A1C07EB54000B0139 /* icon-logout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-logout@2x.png"; sourceTree = "<group>"; };
+		FA748D7B1C07EB54000B0139 /* icon-print@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-print@2x.png"; sourceTree = "<group>"; };
+		FA748D7C1C07EB54000B0139 /* icon-search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-search@2x.png"; sourceTree = "<group>"; };
+		FA748D7D1C07EB54000B0139 /* icon-settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-settings@2x.png"; sourceTree = "<group>"; };
+		FA748D7E1C07EB54000B0139 /* icon-temp-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-temp-error@2x.png"; sourceTree = "<group>"; };
+		FA748D7F1C07EB54000B0139 /* icon-temp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-temp@2x.png"; sourceTree = "<group>"; };
+		FA748D801C07EB54000B0139 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		FA748D811C07EB54000B0139 /* temp-high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temp-high@2x.png"; sourceTree = "<group>"; };
+		FA748D821C07EB54000B0139 /* temp-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temp-normal@2x.png"; sourceTree = "<group>"; };
+		FA748D831C07EB54000B0139 /* user-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-placeholder@2x.png"; sourceTree = "<group>"; };
+		FA748D851C07EB54000B0139 /* Attendance01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Attendance01.png; sourceTree = "<group>"; };
+		FA748D861C07EB54000B0139 /* Attendance02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Attendance02.png; sourceTree = "<group>"; };
+		FA748D871C07EB54000B0139 /* iReception-iPad-1a-add.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iReception-iPad-1a-add.jpg"; sourceTree = "<group>"; };
+		FA748D881C07EB54000B0139 /* iReception-iPad-1a-main-default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iReception-iPad-1a-main-default.jpg"; sourceTree = "<group>"; };
+		FA748D891C07EB54000B0139 /* iReception-iPad-1a-main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iReception-iPad-1a-main.jpg"; sourceTree = "<group>"; };
+		FA748D8A1C07EB54000B0139 /* iReception-iPad-1a-signin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iReception-iPad-1a-signin.jpg"; sourceTree = "<group>"; };
+		FA748DB91C07F405000B0139 /* FingerPrintScannerDataDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerPrintScannerDataDecoder.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FA91985D1C059470006138DB /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA91985E1C059470006138DB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA97A1EC1C62026A00F41664 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
+		FA97A1ED1C62026A00F41664 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		FADFD8981C59F31800A8B7D4 /* button-thermometer-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-thermometer-error@2x.png"; sourceTree = "<group>"; };
+		FADFD89A1C59F32400A8B7D4 /* button-thermometer-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-thermometer-error.png"; sourceTree = "<group>"; };
+		FADFD89C1C59F45400A8B7D4 /* button-photo-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-photo-error@2x.png"; sourceTree = "<group>"; };
+		FADFD89E1C59F45C00A8B7D4 /* button-photo-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-photo-error.png"; sourceTree = "<group>"; };
+		FAE124D11C12E01400F14F25 /* BluetoothControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothControl.h; sourceTree = "<group>"; };
+		FAE124D21C12E01400F14F25 /* BluetoothControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothControl.m; sourceTree = "<group>"; wrapsLines = 0; };
+		FAE270FF1BFC226100D88646 /* Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE271021BFC226100D88646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FAE271051BFC226100D88646 /* iRegistration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iRegistration.xcdatamodel; sourceTree = "<group>"; };
+		FAE271091BFC226100D88646 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FAE2710C1BFC226100D88646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAE2710E1BFC226100D88646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAE271111BFC226100D88646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAE271131BFC226100D88646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE271181BFC226100D88646 /* iRegistrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRegistrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE2711C1BFC226100D88646 /* iRegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRegistrationTests.swift; sourceTree = "<group>"; };
+		FAE2711E1BFC226100D88646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE271231BFC226100D88646 /* iRegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRegistrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE271271BFC226200D88646 /* iRegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRegistrationUITests.swift; sourceTree = "<group>"; };
+		FAE271291BFC226200D88646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE271351BFC227200D88646 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FAE271371BFC22C300D88646 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FAE271391BFC235D00D88646 /* iRegistrationLoginControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iRegistrationLoginControllerTests.swift; sourceTree = "<group>"; };
+		FAE2713B1BFC236C00D88646 /* iRegistrationMasterViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iRegistrationMasterViewControllerTests.swift; sourceTree = "<group>"; };
+		FAE2713D1BFC237D00D88646 /* iRegistrationDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iRegistrationDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		FAE871181BFDE5B2008B20B0 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FAE8711B1BFDE75A008B20B0 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = WebService/WebService.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FAE8711D1BFDF111008B20B0 /* IRegistration_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRegistration_Bridging_Header.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAE270FC1BFC226100D88646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0522F65D597AF3471A0CDFBB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE271151BFC226100D88646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE271201BFC226100D88646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E510BDDB3E99BA1A48D946E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1818C817A3DDF5E9183C9B18 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A3069C572865FF554BB43F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE5989A8EC8B68133267AC /* Pods.debug.xcconfig */,
+				1EF50D5EAA420E43137D3A1A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA0FBA4A1C040FAE0034192B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FA68E6251C04109E00EC93E7 /* NSDate+IRegistration.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		FA3F4B211C02FAF000FC1C25 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				FA456C8E1C0E82B4005CE236 /* BluetoothDeviceInterface.swift */,
+				FA3F4B241C02FB1500FC1C25 /* ThermometerDataDecoder.swift */,
+				FA748DB91C07F405000B0139 /* FingerPrintScannerDataDecoder.swift */,
+				FA01C0AC1C12EA9C00D931A6 /* FingerPrintScannerDelegate.h */,
+				FA01C0AD1C12EA9C00D931A6 /* FingerPrintScannerDelegate.m */,
+				FAE124D01C12DFFB00F14F25 /* ID Scanner */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+		FA731AF01C01FEE7006FC181 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA731AF11C01FEFA006FC181 /* CoreDataManager.swift */,
+				FA91985D1C059470006138DB /* User+CoreDataProperties.swift */,
+				FA91985E1C059470006138DB /* User.swift */,
+				FA229EA31C290CB800143E67 /* Host+CoreDataProperties.swift */,
+				FA229EA41C290CB800143E67 /* Host.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		FA748D5A1C07EB54000B0139 /* Assets 1x */ = {
+			isa = PBXGroup;
+			children = (
+				FA748D5B1C07EB54000B0139 /* arrow-dropdown.png */,
+				FA748D5C1C07EB54000B0139 /* bg-signin.png */,
+				FA748D5D1C07EB54000B0139 /* button-done.png */,
+				FA748D5E1C07EB54000B0139 /* button-fingerprint.png */,
+				FA748D5F1C07EB54000B0139 /* button-idcard.png */,
+				FADFD89E1C59F45C00A8B7D4 /* button-photo-error.png */,
+				FA748D601C07EB54000B0139 /* button-photo.png */,
+				FA748D611C07EB54000B0139 /* button-thermometer.png */,
+				FADFD89A1C59F32400A8B7D4 /* button-thermometer-error.png */,
+				FA748D621C07EB54000B0139 /* circle-status.png */,
+				FA748D631C07EB54000B0139 /* icon-add.png */,
+				FA748D641C07EB54000B0139 /* icon-bigadd.png */,
+				FA748D651C07EB54000B0139 /* icon-logout.png */,
+				FA748D661C07EB54000B0139 /* icon-print.png */,
+				FA748D671C07EB54000B0139 /* icon-search.png */,
+				FA748D681C07EB54000B0139 /* icon-settings.png */,
+				FA748D691C07EB54000B0139 /* icon-temp-error.png */,
+				FA748D6A1C07EB54000B0139 /* icon-temp.png */,
+				FA748D6B1C07EB54000B0139 /* logo.png */,
+				FA748D6C1C07EB54000B0139 /* temp-high.png */,
+				FA748D6D1C07EB54000B0139 /* temp-normal.png */,
+				FA748D6E1C07EB54000B0139 /* user-placeholder.png */,
+			);
+			path = "Assets 1x";
+			sourceTree = "<group>";
+		};
+		FA748D6F1C07EB54000B0139 /* Assets 2x */ = {
+			isa = PBXGroup;
+			children = (
+				FA748D701C07EB54000B0139 /* arrow-dropdown@2x.png */,
+				FA748D711C07EB54000B0139 /* bg-signin@2x.png */,
+				FA748D721C07EB54000B0139 /* button-done@2x.png */,
+				FA748D731C07EB54000B0139 /* button-fingerprint@2x.png */,
+				FA748D741C07EB54000B0139 /* button-idcard@2x.png */,
+				FADFD89C1C59F45400A8B7D4 /* button-photo-error@2x.png */,
+				FA748D751C07EB54000B0139 /* button-photo@2x.png */,
+				FA748D761C07EB54000B0139 /* button-thermometer@2x.png */,
+				FADFD8981C59F31800A8B7D4 /* button-thermometer-error@2x.png */,
+				FA748D771C07EB54000B0139 /* circle-status@2x.png */,
+				FA748D781C07EB54000B0139 /* icon-add@2x.png */,
+				FA748D791C07EB54000B0139 /* icon-bigadd@2x.png */,
+				FA748D7A1C07EB54000B0139 /* icon-logout@2x.png */,
+				FA748D7B1C07EB54000B0139 /* icon-print@2x.png */,
+				FA748D7C1C07EB54000B0139 /* icon-search@2x.png */,
+				FA748D7D1C07EB54000B0139 /* icon-settings@2x.png */,
+				FA748D7E1C07EB54000B0139 /* icon-temp-error@2x.png */,
+				FA748D7F1C07EB54000B0139 /* icon-temp@2x.png */,
+				FA748D801C07EB54000B0139 /* logo@2x.png */,
+				FA748D811C07EB54000B0139 /* temp-high@2x.png */,
+				FA748D821C07EB54000B0139 /* temp-normal@2x.png */,
+				FA748D831C07EB54000B0139 /* user-placeholder@2x.png */,
+			);
+			path = "Assets 2x";
+			sourceTree = "<group>";
+		};
+		FA748D841C07EB54000B0139 /* Mockups */ = {
+			isa = PBXGroup;
+			children = (
+				FA748D851C07EB54000B0139 /* Attendance01.png */,
+				FA748D861C07EB54000B0139 /* Attendance02.png */,
+				FA748D871C07EB54000B0139 /* iReception-iPad-1a-add.jpg */,
+				FA748D881C07EB54000B0139 /* iReception-iPad-1a-main-default.jpg */,
+				FA748D891C07EB54000B0139 /* iReception-iPad-1a-main.jpg */,
+				FA748D8A1C07EB54000B0139 /* iReception-iPad-1a-signin.jpg */,
+			);
+			path = Mockups;
+			sourceTree = "<group>";
+		};
+		FAE124D01C12DFFB00F14F25 /* ID Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				FA01C0A91C12E7E600D931A6 /* UUID.h */,
+				FAE124D11C12E01400F14F25 /* BluetoothControl.h */,
+				FAE124D21C12E01400F14F25 /* BluetoothControl.m */,
+			);
+			name = "ID Scanner";
+			sourceTree = "<group>";
+		};
+		FAE270F61BFC226100D88646 = {
+			isa = PBXGroup;
+			children = (
+				FAE870CA1BFDE1B3008B20B0 /* Assets */,
+				FAE271011BFC226100D88646 /* iRegistration */,
+				FAE2711B1BFC226100D88646 /* iRegistrationTests */,
+				FAE271261BFC226100D88646 /* iRegistrationUITests */,
+				FAE271001BFC226100D88646 /* Products */,
+				9A3069C572865FF554BB43F4 /* Pods */,
+				1E510BDDB3E99BA1A48D946E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAE271001BFC226100D88646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAE270FF1BFC226100D88646 /* Attendance.app */,
+				FAE271181BFC226100D88646 /* iRegistrationTests.xctest */,
+				FAE271231BFC226100D88646 /* iRegistrationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE271011BFC226100D88646 /* iRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				FA0FBA4A1C040FAE0034192B /* Utility */,
+				FA3F4B211C02FAF000FC1C25 /* Devices */,
+				FA731AF01C01FEE7006FC181 /* Data */,
+				FAE8711A1BFDE745008B20B0 /* WebService */,
+				FAE8711D1BFDF111008B20B0 /* IRegistration_Bridging_Header.h */,
+				FAE271021BFC226100D88646 /* AppDelegate.swift */,
+				FA3F4B1F1C02F7C200FC1C25 /* BaseView.swift */,
+				FA731AE61C003987006FC181 /* BaseViewController.swift */,
+				FAE271371BFC22C300D88646 /* LoginViewController.swift */,
+				FAE871181BFDE5B2008B20B0 /* LoginView.swift */,
+				FAE271351BFC227200D88646 /* MainTabBarController.swift */,
+				FA26DD321C054F260023F141 /* SettingsOptionsViewController.swift */,
+				FAE271091BFC226100D88646 /* DetailViewController.swift */,
+				FA731AF51C02200F006FC181 /* DetailView.swift */,
+				FA97A1EC1C62026A00F41664 /* ForgetPasswordView.swift */,
+				FA97A1ED1C62026A00F41664 /* ForgetPasswordViewController.swift */,
+				FAE2710B1BFC226100D88646 /* Main.storyboard */,
+				FAE2710E1BFC226100D88646 /* Assets.xcassets */,
+				FAE271101BFC226100D88646 /* LaunchScreen.storyboard */,
+				FAE271131BFC226100D88646 /* Info.plist */,
+				FAE271041BFC226100D88646 /* iRegistration.xcdatamodeld */,
+			);
+			path = iRegistration;
+			sourceTree = "<group>";
+		};
+		FAE2711B1BFC226100D88646 /* iRegistrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE2711C1BFC226100D88646 /* iRegistrationTests.swift */,
+				FAE2711E1BFC226100D88646 /* Info.plist */,
+			);
+			path = iRegistrationTests;
+			sourceTree = "<group>";
+		};
+		FAE271261BFC226100D88646 /* iRegistrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE271271BFC226200D88646 /* iRegistrationUITests.swift */,
+				FAE271391BFC235D00D88646 /* iRegistrationLoginControllerTests.swift */,
+				FAE2713B1BFC236C00D88646 /* iRegistrationMasterViewControllerTests.swift */,
+				FAE2713D1BFC237D00D88646 /* iRegistrationDetailViewControllerTests.swift */,
+				FAE271291BFC226200D88646 /* Info.plist */,
+			);
+			path = iRegistrationUITests;
+			sourceTree = "<group>";
+		};
+		FAE870CA1BFDE1B3008B20B0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FA748D5A1C07EB54000B0139 /* Assets 1x */,
+				FA748D6F1C07EB54000B0139 /* Assets 2x */,
+				FA748D841C07EB54000B0139 /* Mockups */,
+			);
+			name = Assets;
+			path = iRegistration/Assets;
+			sourceTree = "<group>";
+		};
+		FAE8711A1BFDE745008B20B0 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				FAE8711B1BFDE75A008B20B0 /* WebService.swift */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAE270FE1BFC226100D88646 /* iRegistration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE2712C1BFC226200D88646 /* Build configuration list for PBXNativeTarget "iRegistration" */;
+			buildPhases = (
+				887860BEEF32594A61572645 /* Check Pods Manifest.lock */,
+				FAE270FB1BFC226100D88646 /* Sources */,
+				FAE270FC1BFC226100D88646 /* Frameworks */,
+				FAE270FD1BFC226100D88646 /* Resources */,
+				DADED5EA4A52755C58BFAE48 /* Copy Pods Resources */,
+				8F70A1A624085E5C945D2737 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iRegistration;
+			productName = iRegistration;
+			productReference = FAE270FF1BFC226100D88646 /* Attendance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAE271171BFC226100D88646 /* iRegistrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE2712F1BFC226200D88646 /* Build configuration list for PBXNativeTarget "iRegistrationTests" */;
+			buildPhases = (
+				FAE271141BFC226100D88646 /* Sources */,
+				FAE271151BFC226100D88646 /* Frameworks */,
+				FAE271161BFC226100D88646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE2711A1BFC226100D88646 /* PBXTargetDependency */,
+			);
+			name = iRegistrationTests;
+			productName = iRegistrationTests;
+			productReference = FAE271181BFC226100D88646 /* iRegistrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAE271221BFC226100D88646 /* iRegistrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE271321BFC226200D88646 /* Build configuration list for PBXNativeTarget "iRegistrationUITests" */;
+			buildPhases = (
+				FAE2711F1BFC226100D88646 /* Sources */,
+				FAE271201BFC226100D88646 /* Frameworks */,
+				FAE271211BFC226100D88646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE271251BFC226100D88646 /* PBXTargetDependency */,
+			);
+			name = iRegistrationUITests;
+			productName = iRegistrationUITests;
+			productReference = FAE271231BFC226100D88646 /* iRegistrationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAE270F71BFC226100D88646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0720;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = A2;
+				TargetAttributes = {
+					FAE270FE1BFC226100D88646 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 2JK866NJF3;
+					};
+					FAE271171BFC226100D88646 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = FAE270FE1BFC226100D88646;
+					};
+					FAE271221BFC226100D88646 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = FAE270FE1BFC226100D88646;
+					};
+				};
+			};
+			buildConfigurationList = FAE270FA1BFC226100D88646 /* Build configuration list for PBXProject "Attendance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAE270F61BFC226100D88646;
+			productRefGroup = FAE271001BFC226100D88646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAE270FE1BFC226100D88646 /* iRegistration */,
+				FAE271171BFC226100D88646 /* iRegistrationTests */,
+				FAE271221BFC226100D88646 /* iRegistrationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAE270FD1BFC226100D88646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE271121BFC226100D88646 /* LaunchScreen.storyboard in Resources */,
+				FAE2710F1BFC226100D88646 /* Assets.xcassets in Resources */,
+				FA748D9C1C07EB54000B0139 /* temp-high.png in Resources */,
+				FA748DA01C07EB54000B0139 /* bg-signin@2x.png in Resources */,
+				FA748DA21C07EB54000B0139 /* button-fingerprint@2x.png in Resources */,
+				FA748DB81C07EB54000B0139 /* iReception-iPad-1a-signin.jpg in Resources */,
+				FADFD8991C59F31800A8B7D4 /* button-thermometer-error@2x.png in Resources */,
+				FA748D941C07EB54000B0139 /* icon-bigadd.png in Resources */,
+				FA748DAD1C07EB54000B0139 /* icon-temp-error@2x.png in Resources */,
+				FA748D931C07EB54000B0139 /* icon-add.png in Resources */,
+				FA748DB71C07EB54000B0139 /* iReception-iPad-1a-main.jpg in Resources */,
+				FA748DA81C07EB54000B0139 /* icon-bigadd@2x.png in Resources */,
+				FA748DAA1C07EB54000B0139 /* icon-print@2x.png in Resources */,
+				FADFD89B1C59F32400A8B7D4 /* button-thermometer-error.png in Resources */,
+				FA748D8B1C07EB54000B0139 /* arrow-dropdown.png in Resources */,
+				FA748D8E1C07EB54000B0139 /* button-fingerprint.png in Resources */,
+				FA748DB21C07EB54000B0139 /* user-placeholder@2x.png in Resources */,
+				FA748D8F1C07EB54000B0139 /* button-idcard.png in Resources */,
+				FA748D8D1C07EB54000B0139 /* button-done.png in Resources */,
+				FA748DA71C07EB54000B0139 /* icon-add@2x.png in Resources */,
+				FA748DB11C07EB54000B0139 /* temp-normal@2x.png in Resources */,
+				FA748D981C07EB54000B0139 /* icon-settings.png in Resources */,
+				FA748DAB1C07EB54000B0139 /* icon-search@2x.png in Resources */,
+				FADFD89F1C59F45C00A8B7D4 /* button-photo-error.png in Resources */,
+				FA748D9E1C07EB54000B0139 /* user-placeholder.png in Resources */,
+				FA748D901C07EB54000B0139 /* button-photo.png in Resources */,
+				FA748D8C1C07EB54000B0139 /* bg-signin.png in Resources */,
+				FA748D911C07EB54000B0139 /* button-thermometer.png in Resources */,
+				FAE2710D1BFC226100D88646 /* Main.storyboard in Resources */,
+				FA748DA31C07EB54000B0139 /* button-idcard@2x.png in Resources */,
+				FA748D9A1C07EB54000B0139 /* icon-temp.png in Resources */,
+				FA748DB01C07EB54000B0139 /* temp-high@2x.png in Resources */,
+				FA748DA91C07EB54000B0139 /* icon-logout@2x.png in Resources */,
+				FA748DB41C07EB54000B0139 /* Attendance02.png in Resources */,
+				FA748DAF1C07EB54000B0139 /* logo@2x.png in Resources */,
+				FA748DB61C07EB54000B0139 /* iReception-iPad-1a-main-default.jpg in Resources */,
+				FA748D991C07EB54000B0139 /* icon-temp-error.png in Resources */,
+				FA748DA11C07EB54000B0139 /* button-done@2x.png in Resources */,
+				FA748D9D1C07EB54000B0139 /* temp-normal.png in Resources */,
+				FA748D961C07EB54000B0139 /* icon-print.png in Resources */,
+				FA748D9B1C07EB54000B0139 /* logo.png in Resources */,
+				FA748DAC1C07EB54000B0139 /* icon-settings@2x.png in Resources */,
+				FA748D951C07EB54000B0139 /* icon-logout.png in Resources */,
+				FA748D971C07EB54000B0139 /* icon-search.png in Resources */,
+				FA748DA61C07EB54000B0139 /* circle-status@2x.png in Resources */,
+				FA748DB51C07EB54000B0139 /* iReception-iPad-1a-add.jpg in Resources */,
+				FA748D921C07EB54000B0139 /* circle-status.png in Resources */,
+				FA748DB31C07EB54000B0139 /* Attendance01.png in Resources */,
+				FA748D9F1C07EB54000B0139 /* arrow-dropdown@2x.png in Resources */,
+				FADFD89D1C59F45400A8B7D4 /* button-photo-error@2x.png in Resources */,
+				FA748DAE1C07EB54000B0139 /* icon-temp@2x.png in Resources */,
+				FA748DA41C07EB54000B0139 /* button-photo@2x.png in Resources */,
+				FA748DA51C07EB54000B0139 /* button-thermometer@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE271161BFC226100D88646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE271211BFC226100D88646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		887860BEEF32594A61572645 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F70A1A624085E5C945D2737 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DADED5EA4A52755C58BFAE48 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAE270FB1BFC226100D88646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA456C8F1C0E82B4005CE236 /* BluetoothDeviceInterface.swift in Sources */,
+				FAE271381BFC22C300D88646 /* LoginViewController.swift in Sources */,
+				FA229EA61C290CB800143E67 /* Host.swift in Sources */,
+				FA229EA51C290CB800143E67 /* Host+CoreDataProperties.swift in Sources */,
+				FAE871191BFDE5B2008B20B0 /* LoginView.swift in Sources */,
+				FA91985F1C059470006138DB /* User+CoreDataProperties.swift in Sources */,
+				FA01C0AE1C12EA9C00D931A6 /* FingerPrintScannerDelegate.m in Sources */,
+				FA9198601C059470006138DB /* User.swift in Sources */,
+				FA97A1EE1C62026A00F41664 /* ForgetPasswordView.swift in Sources */,
+				FA68E6261C04109E00EC93E7 /* NSDate+IRegistration.swift in Sources */,
+				FAE8711C1BFDE75A008B20B0 /* WebService.swift in Sources */,
+				FAE271061BFC226100D88646 /* iRegistration.xcdatamodeld in Sources */,
+				FA26DD331C054F260023F141 /* SettingsOptionsViewController.swift in Sources */,
+				FAE271031BFC226100D88646 /* AppDelegate.swift in Sources */,
+				FA731AF21C01FEFA006FC181 /* CoreDataManager.swift in Sources */,
+				FA731AF61C02200F006FC181 /* DetailView.swift in Sources */,
+				FA731AE71C003987006FC181 /* BaseViewController.swift in Sources */,
+				FAE271361BFC227200D88646 /* MainTabBarController.swift in Sources */,
+				FA748DBA1C07F405000B0139 /* FingerPrintScannerDataDecoder.swift in Sources */,
+				FA3F4B201C02F7C200FC1C25 /* BaseView.swift in Sources */,
+				FAE124D31C12E01400F14F25 /* BluetoothControl.m in Sources */,
+				FAE2710A1BFC226100D88646 /* DetailViewController.swift in Sources */,
+				FA97A1EF1C62026A00F41664 /* ForgetPasswordViewController.swift in Sources */,
+				FA3F4B251C02FB1500FC1C25 /* ThermometerDataDecoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE271141BFC226100D88646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE2711D1BFC226100D88646 /* iRegistrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE2711F1BFC226100D88646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE2713E1BFC237D00D88646 /* iRegistrationDetailViewControllerTests.swift in Sources */,
+				FAE2713A1BFC235D00D88646 /* iRegistrationLoginControllerTests.swift in Sources */,
+				FAE2713C1BFC236C00D88646 /* iRegistrationMasterViewControllerTests.swift in Sources */,
+				FAE271281BFC226200D88646 /* iRegistrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE2711A1BFC226100D88646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE270FE1BFC226100D88646 /* iRegistration */;
+			targetProxy = FAE271191BFC226100D88646 /* PBXContainerItemProxy */;
+		};
+		FAE271251BFC226100D88646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE270FE1BFC226100D88646 /* iRegistration */;
+			targetProxy = FAE271241BFC226100D88646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAE2710B1BFC226100D88646 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE2710C1BFC226100D88646 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAE271101BFC226100D88646 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE271111BFC226100D88646 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAE2712A1BFC226200D88646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FAE2712B1BFC226200D88646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAE2712D1BFC226200D88646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5DE5989A8EC8B68133267AC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iRegistration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapura.AttendanceApp;
+				PRODUCT_NAME = Attendance;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = iRegistration/IRegistration_Bridging_Header.h;
+			};
+			name = Debug;
+		};
+		FAE2712E1BFC226200D88646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF50D5EAA420E43137D3A1A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iRegistration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapura.AttendanceApp;
+				PRODUCT_NAME = Attendance;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = iRegistration/IRegistration_Bridging_Header.h;
+			};
+			name = Release;
+		};
+		FAE271301BFC226200D88646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iRegistrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a2.iRegistrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iRegistration.app/iRegistration";
+			};
+			name = Debug;
+		};
+		FAE271311BFC226200D88646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iRegistrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a2.iRegistrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iRegistration.app/iRegistration";
+			};
+			name = Release;
+		};
+		FAE271331BFC226200D88646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iRegistrationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a2.iRegistrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iRegistration;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FAE271341BFC226200D88646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iRegistrationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a2.iRegistrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iRegistration;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAE270FA1BFC226100D88646 /* Build configuration list for PBXProject "Attendance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE2712A1BFC226200D88646 /* Debug */,
+				FAE2712B1BFC226200D88646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE2712C1BFC226200D88646 /* Build configuration list for PBXNativeTarget "iRegistration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE2712D1BFC226200D88646 /* Debug */,
+				FAE2712E1BFC226200D88646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE2712F1BFC226200D88646 /* Build configuration list for PBXNativeTarget "iRegistrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE271301BFC226200D88646 /* Debug */,
+				FAE271311BFC226200D88646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE271321BFC226200D88646 /* Build configuration list for PBXNativeTarget "iRegistrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE271331BFC226200D88646 /* Debug */,
+				FAE271341BFC226200D88646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAE271041BFC226100D88646 /* iRegistration.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAE271051BFC226100D88646 /* iRegistration.xcdatamodel */,
+			);
+			currentVersion = FAE271051BFC226100D88646 /* iRegistration.xcdatamodel */;
+			path = iRegistration.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAE270F71BFC226100D88646 /* Project object */;
+}

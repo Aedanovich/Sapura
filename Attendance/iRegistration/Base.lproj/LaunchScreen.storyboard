@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="LIr-AM-QqL">
+                                <rect key="frame" x="367" y="70" width="177" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="IVD-60-l6i"/>
+                                    <constraint firstAttribute="width" constant="177" id="XKp-qs-x0T"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright© 2015 Sapura Synergy Singapore. All Rights Reserved. Ver 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzA-6Z-LdR">
+                                <rect key="frame" x="109" y="566.5" width="382.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="bg-signin.png" translatesAutoresizingMaskIntoConstraints="NO" id="MtU-cq-nMh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LIr-AM-QqL" secondAttribute="trailing" constant="36" id="2Dw-SZ-Fem"/>
+                            <constraint firstAttribute="bottom" secondItem="xzA-6Z-LdR" secondAttribute="bottom" constant="20" id="6Gc-Jl-HTS"/>
+                            <constraint firstItem="MtU-cq-nMh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="8Yi-CE-i7k"/>
+                            <constraint firstAttribute="trailing" secondItem="MtU-cq-nMh" secondAttribute="trailing" id="aIi-dz-mFh"/>
+                            <constraint firstItem="xzA-6Z-LdR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aQa-v5-pRv"/>
+                            <constraint firstItem="MtU-cq-nMh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bSx-ZR-74m"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="MtU-cq-nMh" secondAttribute="bottom" id="gbY-sP-pEz"/>
+                            <constraint firstItem="LIr-AM-QqL" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="50" id="yAc-Ha-Q0n"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-signin.png" width="1024" height="1024"/>
+        <image name="logo.png" width="177" height="65"/>
+    </resources>
+</document>
